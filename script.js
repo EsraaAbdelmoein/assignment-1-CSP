@@ -1,7 +1,5 @@
-// script.js
-
 // Part 1: Variables, Data Types & Type Casting
-let studentName = "Esraa";
+let studentName = "Esraa Abdelmoeincd ";
 let studentAge = 34;
 let isEnrolled = true;
 
@@ -14,34 +12,43 @@ let studentAgeString = String(studentAge);
 document.write("Before Conversion: " + typeof studentAge + "<br>");
 document.write("After Conversion: " + typeof studentAgeString + "<br><br>");
 
-// Part 2: Operators & User Interaction
-let num1 = Number(prompt("Enter first number: "));
-let num2 = Number(prompt("Enter second number: "));
+document.write("<h1> Step 2 </h1>");
 
-document.write("Addition: " + (num1 + num2) + "<br>");
-document.write("Subtraction: " + (num1 - num2) + "<br>");
-document.write("Multiplication: " + (num1 * num2) + "<br>");
-document.write("Division: " + (num1 / num2) + "<br>");
-document.write("Modulus: " + (num1 % num2) + "<br><br>");
+let num1 = Number(prompt("Please enter a number", "2"));
+let num2 = Number(prompt("Please enter another number", "2"));
 
-// Part 3: Conditional Execution
-let age = Number(prompt("Enter your age: "));
+// Using +
+document.write("This is adding two variables together " + (num1 + num2));
+// Using -
+document.write(" <br> This is subtracting two variables together " + (num1 - num2));
+// Using *
+document.write(" <br> This is multiplying two variables together " + (num1 * num2));
+// Using /
+document.write(" <br> This is dividing two variables together " + (num1 / num2));
+// Using %
+document.write(" <br> This is when modulus is used on the two variables together " + (num1 % num2));
+
+document.write("<h1> Step 3 </h1>");
+
+let age = Number(prompt("Please enter your age", "18"));
 if (age >= 18) {
-    document.write("You are eligible to vote!<br><br>");
+    // You are eligible to vote!
+    document.write("You are eligible to vote! ");
 } else {
-    document.write("You are not eligible to vote yet.<br><br>");
+    // You are not eligible to vote yet
+    document.write("You are not eligible to vote yet ");
 }
 
-// Part 4: Loops
-// For Loop
+document.write("<h1> Step 4 </h1>");
+
 for (let i = 1; i <= 10; i++) {
-    document.write(i + " ");
+    document.write(" " + i);
 }
-document.write("<br><br>");
 
-// While Loop
-let userNumber;
+let num3 = 0;
+
 do {
-    userNumber = Number(prompt("Enter a number greater than 10: "));
-} while (userNumber <= 10);
-document.write("Valid number entered: " + userNumber);
+    num3 = Number(prompt("Please enter a number greater than 10", "14"));
+} while (num3 <= 10);
+
+document.write("<h1> Perfect job! You are amazing! </h1>");
