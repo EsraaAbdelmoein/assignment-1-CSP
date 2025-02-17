@@ -1,5 +1,5 @@
 // Part 1: Variables, Data Types & Type Casting
-let studentName = "Esraa Abdelmoeincd ";
+let studentName = "Esraa Abdelmoein";
 let studentAge = 34;
 let isEnrolled = true;
 
